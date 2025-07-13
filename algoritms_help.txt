@@ -1,6 +1,77 @@
 algorithms
+---------------------------------------------------
 
 session_01
 
 caesar cipher
+---------------------------------------------------
 
+session_02
+
+limit
+
+lambda, anonymose function
+یک تابع بی‌نام (ناشناس) است که برای تعریف توابع ساده و کوتاه استفاده می‌شود. به‌جای استفاده از کلمه کلیدی def، از lambda برای تعریف سریع یک تابع استفاده می‌شود
+lambda arguments: expression
+
+sample code :
+----------------------------
+sum = lambda a, b: a + b
+print(sum(3, 4))  # خروجی: 7
+
+# فهرستی از اعداد زوج
+numbers = [1, 2, 3, 4, 5, 6]
+even = list(filter(lambda x: x % 2 == 0, numbers))
+print(even)  # خروجی: [2, 4, 6]
+
+people = [("Ali", 25), ("Sara", 20), ("Mina", 30)]
+# مرتب‌سازی بر اساس سن
+sorted_people = sorted(people, key=lambda x: x[1])
+print(sorted_people)
+# خروجی: [('Sara', 20), ('Ali', 25), ('Mina', 30)]
+----------------------------
+
+List Comprehension
+که یک روش خلاصه و تمیز برای ساختن لیست‌هاست.
+List Comprehension یعنی ساختن یک لیست جدید از یک لیست دیگر (یا هر iterable) با یک خط کد.
+
+new_list = [expression for item in iterable if condition]
+
+sample code :
+----------------------------
+squares = [x**2 for x in range(5)]
+# [0, 1, 4, 9, 16]
+
+evens = [x for x in range(10) if x % 2 == 0]
+# [0, 2, 4, 6, 8]
+
+names = ['ali', 'sara', 'reza']
+upper_names = [name.upper() for name in names]
+# ['ALI', 'SARA', 'REZA']
+
+labels = ['even' if x % 2 == 0 else 'odd' for x in range(5)]
+# ['even', 'odd', 'even', 'odd', 'even']
+
+square = [i*i for i in range(5)]
+
+v = [(i , "even" if i%2==0 else "odd") for i in range(1,11)]
+
+l2d = [[1,2],[3,4],[5,6]]
+
+l = [two for one in l2d for two in one]
+
+----------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------
