@@ -2,6 +2,7 @@
 [3,4,5,6,8,9,11,13,15,17,20,23,24,25,37]
 sorted data
 indx
+o(sqrt(n)= o(n^1/2))
 """
 
 import math
@@ -13,7 +14,7 @@ def jump_search(array, target):
     prev = 0
     step = block_size
 
-    while array[min(step, arr_size)-1] < target:
+    while array[min(step, arr_size) - 1] < target:
         prev = step
         step += block_size
         if prev >= arr_size:
