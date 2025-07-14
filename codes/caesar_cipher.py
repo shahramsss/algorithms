@@ -19,7 +19,6 @@ def encrypt(data, step):
         else:
             new_key = (alpha.index(character) + step) % len(alpha)
             result += alpha[new_key]
-
     return result
 
 
@@ -31,10 +30,10 @@ def decrypt(data, step):
 def brute_force(data):
     alpha = ascii_letters
     brute_forc_data = {}
-
-    for step in range(1 , len(alpha)+1):
-        brute_forc_data[step] = decrypt(data , step)
+    
+    for step in range(1, len(alpha) + 1):
+        brute_forc_data[step] = decrypt(data, step)
     return brute_forc_data
 
+
 print(brute_force("eqmv"))
- 

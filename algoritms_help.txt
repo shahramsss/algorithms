@@ -19,10 +19,17 @@ sample code :
 sum = lambda a, b: a + b
 print(sum(3, 4))  # خروجی: 7
 
+filter(function, iterable)
+list(iterable)
+یک تابع داخلی است که برای تبدیل یک iterable (مثل رشته، تاپل، دیکشنری، مجموعه یا هر چیزی که قابل پیمایش باشد) به یک لیست استفاده می‌شود.
+
 # فهرستی از اعداد زوج
 numbers = [1, 2, 3, 4, 5, 6]
 even = list(filter(lambda x: x % 2 == 0, numbers))
 print(even)  # خروجی: [2, 4, 6]
+
+sorted(iterable, *, key=None, reverse=False)
+key: تابعی که روی هر عنصر اعمال می‌شود تا بر اساس نتیجه مرتب شود (اختیاری)
 
 people = [("Ali", 25), ("Sara", 20), ("Mina", 30)]
 # مرتب‌سازی بر اساس سن

@@ -13,4 +13,15 @@ def limit(arr, min_limit=None, max_limit=None):
     return [val for val in arr if min_check(val) and max_check(val)]
 
 
-print(limit([1, 5, 10, 15, 20, 25], min_limit=3, max_limit=16))
+def limit2(arr, min_limit=None, max_limit=None):
+    if len(arr) == 0:
+        return arr
+    if min_limit == None:
+        min_limit = min(arr)
+    if max_limit == None:
+        max_limit = max(arr)
+
+    return list(filter((lambda x: min_limit <= x <= max_limit), arr))
+
+
+print(limit2([1, 5, 10, 15, 20, 25], min_limit=3, max_limit=16))
