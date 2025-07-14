@@ -1,11 +1,11 @@
 algorithms
 ---------------------------------------------------
-
+d1 r1
 session_01
 
 caesar cipher
 ---------------------------------------------------
-
+d1 r1
 session_02
 
 limit
@@ -69,16 +69,28 @@ l = [two for one in l2d for two in one]
 
 ----------------------------
 
+session_03
 
+complexity
+use resources
 
+time complexity
+space complexity
 
-
-
-
-
-
-
-
-
+omega best case 
+teta verage case
+o worst case
+o = operations
+o(1) = constant
+o(log n)
+o(n) = linier
+o(n log n)
+o(n^2)
+o(2^n)
+o(n!)
 
 ---------------------------------------------------
+
+session_04
+
+top_one
