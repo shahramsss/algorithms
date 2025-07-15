@@ -25,9 +25,9 @@ def jump_search(array, target):
         if prev == min(step, arr_size):
             return -1
 
-    if array[prev] == target:
-        return prev
+        if array[prev] == target:
+            return prev
     return -1
 
 
-print(jump_search([3, 4, 5, 6, 8, 9, 11, 13, 15, 17, 20, 23, 24, 25, 37], 5))
+print(jump_search([3, 4, 5, 6, 8, 9, 11, 13, 15, 17, 20, 23, 24, 25, 37], 8))

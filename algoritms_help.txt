@@ -91,6 +91,14 @@ o(n!)
 
 ---------------------------------------------------
 
-session_04
+session_11
 
-top_one
+complexity
+o(nk)
+for(
+    for()
+)
+
+on(n+k)
+for()
+for()
