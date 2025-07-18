@@ -6,7 +6,7 @@
 def two_sum(numbers, target):
     dic = {}
 
-    for i , num in enumerate(numbers):
+    for i, num in enumerate(numbers):
         if target - num in dic:
             return [dic[target - num], i]
         dic[num] = i
