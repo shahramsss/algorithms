@@ -20,8 +20,8 @@ class Zigzag:
         return False
 
 
-
-z  = Zigzag([1,3,5,7,9,], [2,4,6,8] )
+z = Zigzag([1, 3, 5, 7, 9, 1, 5, 5, 7], [2, 4, 6, 8])
 
 while z.has_next():
+    # print(z.queue)
     print(z.next(), end=" ")
