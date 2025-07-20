@@ -12,7 +12,6 @@ def merge_tools(string, k):
 
     for i in range(0, len(string), k):
         u = ""
-
         for ch in string[i : i + k]:
             if ch not in u:
                 u = u + ch
@@ -20,5 +19,4 @@ def merge_tools(string, k):
 
     print("\n".join(unique))
 
-
-merge_tools("AAABCADDE", 3)
+merge_tools('AAABCADDE' , 3)
